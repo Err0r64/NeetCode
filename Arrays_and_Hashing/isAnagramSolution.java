@@ -1,8 +1,11 @@
 package Arrays_and_Hashing;
-// package Arrays_and_Hashing.isAnagramSolution;
 
 import java.util.HashMap;
 class isAnagramSolutionSolution {
+    // Time Complexity: O(n)
+    // Space Complexity: O(s + t)
+    // This solution uses two hash maps to count the occurrences of each character in both strings.
+    // It then compares the two hash maps to determine if the strings are anagrams.
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
             return false;
